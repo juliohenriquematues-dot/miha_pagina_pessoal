@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>julio aqui</title>
+  <meta name="description" content="Página pessoal do Julio com tema inspirado no filme Carros da Disney." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Russo+One&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --card: #1a1a1a;
+      --text: #f5f5f5;
+      --muted: #bbbbbb;
+      --accent: #e21d1d;
+      --secondary: #ffd700;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #111 0%, #2b2b2b 100%);
+      color: var(--text);
+      font-family: 'Russo One', sans-serif;
+      line-height: 1.6;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      min-height: 100dvh;
+    }
+    header {
+      padding: 24px 16px 0;
+      text-align: center;
+      background: linear-gradient(to right, var(--accent), #ff3b3b);
+      color: white;
+      text-shadow: 2px 2px 0px #000;
+      border-bottom: 4px solid var(--secondary);
+    }
+    .container { width: min(940px, 92%); margin: 0 auto 24px; }
+    .card {
+      background: var(--card);
+      border: 2px solid var(--accent);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: 0 0 20px rgba(226,29,29,0.6);
+      margin-top: 20px;
+    }
+    .hero-img {
+      width: 100%;
+      height: auto;
+      border-radius: 14px;
+      display: block;
+      object-fit: cover;
+      aspect-ratio: 16/9;
+      border: 3px solid var(--secondary);
+    }
+    h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: clamp(1.8rem, 1.4rem + 1.2vw, 2.6rem);
+      margin: 12px 0 4px;
+      letter-spacing: 1px;
+    }
+    h4 { margin: 0 0 12px; color: var(--secondary); font-weight: normal; }
+    .description { font-size: 1.1rem; }
+    .description b { color: var(--secondary); text-shadow: 1px 1px 2px #000; }
+    .video-wrap {
+      margin-top: 14px;
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16/9;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid var(--accent);
+      box-shadow: 0 0 15px rgba(255,215,0,0.6);
+    }
+    .video-wrap iframe {
+      position: absolute; inset: 0; width: 100%; height: 100%;
+    }
+    footer {
+      width: 100%;
+      color: var(--muted);
+      border-top: 3px solid var(--accent);
+      background: #111;
+      padding: 14px 16px 28px;
+      text-align: center;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 1px;
+    }
+    footer a { color: var(--secondary); text-decoration: none; }
+    footer a:hover { text-decoration: underline; color: var(--accent); }
+    a, button, iframe { outline-offset: 3px; }
+    a:focus-visible, button:focus-visible, iframe:focus-visible { outline: 3px solid var(--secondary); border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h2>capotei 🏎️💨</h2>
+      <h4>e nois de novo na pista</h4>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="card">
+      <img src="./img/thumb2-lightning-mcqueen-crash-cars-3-disney-2017-movie.jpg" alt="Lightning McQueen em cena do filme Carros, carro vermelho com número 95" id="img" class="hero-img" />
+
+      <section class="description" aria-label="Descrição">
+        <p>
+          ai ai<br>
+          <b>eoem</b><br />
+          <b>tem dia q parece q e noite</b><br />
+          🏁 Voltei 🏎️ 
+        </p>
+      </section>
+
+      <div class="video-wrap" aria-label="Vídeo do YouTube">
+        <iframe
+          src="https://www.youtube.com/embed/nRjHtapythU"
+          title="Vídeo no YouTube"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <small><b>2005</b> — feito com html e css — <a href="https://github.com/juliohenriquematues-dot" target="_blank" rel="noopener noreferrer">github_Julio</a></small>
+  </footer>
+</body>
+</html>
